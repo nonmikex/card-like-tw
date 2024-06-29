@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, -apple-system;
+  font-weight: 400;
+
+  color: white;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  height: 100vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app {
+  width: 300px;
+  background: #171717;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-header img {
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+
+.card-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: #171717;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.card-button:hover {
+  background: #09F;
+  color: white;
+}
+
+.card-button.is-following {
+  background-color: transparent;
+  border: 1px solid #bbb;
+  color: white;
+}
+
+.card-button .un-follow {
+  display: none;
+}
+
+.card-button.is-following:hover .un-follow {
+  display: block;
+}
+
+.card-button.is-following:hover .in-follow {
+  display: none;
+}
+
+.card-button.is-following:hover {
+  background-color: #ff000023;
+  border: 1px solid red;
+  color: red;
+}
